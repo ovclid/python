@@ -1,0 +1,9 @@
+# pip3 install PDF2Image
+# 폴더에 poppler 다운로드 및 저장 (https://github.com/oschwartz10612/poppler-windows/releases/)
+
+from pdf2image import convert_from_path, convert_from_bytes
+
+path = 'C:/Program Files/poppler/bin' # poppler가 저장된 폴더
+images = convert_from_path("추천.pdf", dpi = 300, poppler_path = path)
+images[0].save("a.jpg")
+
