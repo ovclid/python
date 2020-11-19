@@ -12,8 +12,8 @@ nation_dic = {1 : "위", 2:"촉", 3:"오"}
 nation = nation_dic[int(input("나라를 선택하시오(1. 위, 2. 촉, 3. 오) : "))]
 
 ##my_choice_df = pd.DataFrame(None, columns = df.columns)
-my_choice_df = df.head().copy()
-my_choice_df.drop(my_choice_df.index, inplace=True)
+my_choice_df = df.head(0).copy()
+#my_choice_df.drop(my_choice_df.index, inplace=True)
 
 while True:
     print("---------------------------------------------------------------------")
